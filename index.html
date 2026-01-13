@@ -18,7 +18,17 @@
   <link rel="stylesheet" crossorigin href="/assets/index-CcO14OS0.css">
 </head>
 
-<body id="root" class="light" style="background-color: var(--bg-color)">
+<body id="root" class="dark" style="background-color: var(--bg-color)">
+  <script>
+    (function () {
+      const redirect = sessionStorage.getItem("spa:redirect");
+      if (redirect) {
+        sessionStorage.removeItem("spa:redirect");
+        history.replaceState(null, "", redirect);
+      }
+    })();
+  </script>
+
 </body>
 
 </html>
