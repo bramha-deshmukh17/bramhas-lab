@@ -19,13 +19,13 @@ export default function Apps() {
                     </p>
 
                     <div className="mt-4 flex gap-4 text-sm">
-                        <a href="/app/rupee-diary">
+                        <a href="/app/rupee-diary" className="underline">
                             View
                         </a>
                         <a
                             href="https://play.google.com/store/apps/details?id=com.bramhaslab.rupeediary"
                             target="_blank"
-                            rel="noopener noreferrer"
+                            className="underline"
                         >
                             Google Play
                         </a>

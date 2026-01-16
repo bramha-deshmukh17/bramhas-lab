@@ -12,7 +12,10 @@ export default function RupeeDiary() {
             <RupeeDiaryNavbar />
 
             <header>
-                <h1 className="text-3xl font-bold text-[var(--app-accent-color)]">Rupee Diary</h1>
+                <div className="flex space-x-5 items-center">
+                    <img src="/images/rupeediary/app_icon.png" alt="" style={{ width: "70px", borderRadius: "50%", }} />
+                    <h1 className="text-3xl font-bold text-[var(--app-accent-color)]">Rupee Diary</h1>
+                </div>
                 <p className="mt-2 max-w-xl">
                     Rupee Diary is a simple and private expense tracking app designed to
                     help you record daily income and expenses with ease. It focuses on

@@ -9,6 +9,10 @@
     --app-accent-color: #10B981; /* emerald green */
 }
 
+.underline{
+    text-underline-offset: 0.2em;
+}
+
 .brand-gradient {
     background: linear-gradient(270deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
