@@ -1,71 +1,1385 @@
-﻿<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rupee Diary - Privacy Policy</title>
-    <meta name="robots" content="index,follow" />
-  </head>
-  <body style="font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; max-width: 900px; margin: 32px auto; padding: 0 16px;">
-    <h1>Rupee Diary - Privacy Policy</h1>
-    <p><strong>Rupee Diary</strong> Mobile Application</p>
-    <p>Last updated: 03/01/2026</p>
+﻿<html lang="en" data-app="rupee-diary">
 
-    <p>
-      Rupee Diary respects your privacy. This page explains how your financial data is handled within the
-      Rupee Diary mobile application.
-    </p>
+<head>
+  <!-- REMOVE these (they cause the SPA to take over / also not valid on prod) -->
+  <!--
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh"; ...</script>
+    <script type="module" src="/@vite/client"></script>
+    -->
 
-    <h2>Data Collection</h2>
-    <p>
-      Rupee Diary does not collect, store, or transmit personal or financial data to any external servers.
-      All data entered by the user remains stored locally on the user&apos;s device.
-    </p>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/images/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bramha's Lab</title>
+  <style type="text/css" data-vite-dev-id="E:/Live/bramhaslab/src/index.css">
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+    @layer properties;
+    @layer theme, base, components, utilities;
 
-    <h2>Internet Usage</h2>
-    <p>
-      The app may use internet connectivity for optional features. No personal or financial data is uploaded
-      or shared with any service.
-    </p>
+    /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+    @layer theme {
 
-    <h2>Local Storage</h2>
-    <p>
-      All financial records, transactions, and settings are stored locally using the device&apos;s internal storage
-      and are never accessed remotely.
-    </p>
+      :root,
+      :host {
+        --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+          "Courier New", monospace;
+        --color-gray-400: oklch(70.7% 0.022 261.325);
+        --color-black: #000;
+        --color-white: #fff;
+        --spacing: 0.25rem;
+        --container-md: 28rem;
+        --container-xl: 36rem;
+        --container-2xl: 42rem;
+        --text-xs: 0.75rem;
+        --text-xs--line-height: calc(1 / 0.75);
+        --text-sm: 0.875rem;
+        --text-sm--line-height: calc(1.25 / 0.875);
+        --text-lg: 1.125rem;
+        --text-lg--line-height: calc(1.75 / 1.125);
+        --text-xl: 1.25rem;
+        --text-xl--line-height: calc(1.75 / 1.25);
+        --text-2xl: 1.5rem;
+        --text-2xl--line-height: calc(2 / 1.5);
+        --text-3xl: 1.875rem;
+        --text-3xl--line-height: calc(2.25 / 1.875);
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+        --tracking-wide: 0.025em;
+        --leading-tight: 1.25;
+        --radius-lg: 0.5rem;
+        --radius-xl: 0.75rem;
+        --default-transition-duration: 150ms;
+        --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        --default-font-family: var(--font-sans);
+        --default-mono-font-family: var(--font-mono);
+      }
+    }
 
-    <h2>Data Backup &amp; Restore</h2>
-    <p>
-      Users may optionally export or import their data manually. Backup files remain fully under the user&apos;s
-      control and are never transmitted to any server.
-    </p>
+    @layer base {
 
-    <h2>Third-Party Services</h2>
-    <p>
-      Rupee Diary does not use advertising, analytics, or tracking services of any kind.
-    </p>
+      *,
+      ::after,
+      ::before,
+      ::backdrop,
+      ::file-selector-button {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0 solid;
+      }
 
-    <h2>Data Security</h2>
-    <p>
-      Reasonable measures are taken to protect data stored locally on the user&apos;s device against unauthorized access.
-    </p>
+      html,
+      :host {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+        font-feature-settings: var(--default-font-feature-settings, normal);
+        font-variation-settings: var(--default-font-variation-settings, normal);
+        -webkit-tap-highlight-color: transparent;
+      }
 
-    <h2>Children&apos;s Privacy</h2>
-    <p>
-      Rupee Diary is not intended for children under the age of 13 and does not knowingly collect data from children.
-    </p>
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
 
-    <h2>Policy Updates</h2>
-    <p>
-      This privacy policy may be updated in future versions of the app. Any changes will be reflected on this page.
-    </p>
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
 
-    <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, contact: <a href="mailto:support@bramhadeshmukh.me">support@bramhadeshmukh.me</a></p>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
 
-    <hr />
-    <p style="font-size: 0.9em; color: #555;">
-      This page is hosted as a static document so automated reviewers can access it reliably.
-    </p>
-  </body>
+      a {
+        color: inherit;
+        -webkit-text-decoration: inherit;
+        text-decoration: inherit;
+      }
+
+      b,
+      strong {
+        font-weight: bolder;
+      }
+
+      code,
+      kbd,
+      samp,
+      pre {
+        font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+        font-feature-settings: var(--default-mono-font-feature-settings, normal);
+        font-variation-settings: var(--default-mono-font-variation-settings, normal);
+        font-size: 1em;
+      }
+
+      small {
+        font-size: 80%;
+      }
+
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      sup {
+        top: -0.5em;
+      }
+
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+
+      :-moz-focusring {
+        outline: auto;
+      }
+
+      progress {
+        vertical-align: baseline;
+      }
+
+      summary {
+        display: list-item;
+      }
+
+      ol,
+      ul,
+      menu {
+        list-style: none;
+      }
+
+      img,
+      svg,
+      video,
+      canvas,
+      audio,
+      iframe,
+      embed,
+      object {
+        display: block;
+      }
+
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+
+      button,
+      input,
+      select,
+      optgroup,
+      textarea,
+      ::file-selector-button {
+        font: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        border-radius: 0;
+        background-color: transparent;
+        opacity: 1;
+      }
+
+      :where(select:is([multiple], [size])) optgroup {
+        font-weight: bolder;
+      }
+
+      :where(select:is([multiple], [size])) optgroup option {
+        padding-inline-start: 20px;
+      }
+
+      ::file-selector-button {
+        margin-inline-end: 4px;
+      }
+
+      ::-moz-placeholder {
+        opacity: 1;
+      }
+
+      ::placeholder {
+        opacity: 1;
+      }
+
+      @supports (not (-webkit-appearance: -apple-pay-button)) or (contain-intrinsic-size: 1px) {
+        ::-moz-placeholder {
+          color: currentcolor;
+
+          @supports (color: color-mix(in lab, red, red)) {
+            color: color-mix(in oklab, currentcolor 50%, transparent);
+          }
+        }
+
+        ::placeholder {
+          color: currentcolor;
+
+          @supports (color: color-mix(in lab, red, red)) {
+            color: color-mix(in oklab, currentcolor 50%, transparent);
+          }
+        }
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      ::-webkit-date-and-time-value {
+        min-height: 1lh;
+        text-align: inherit;
+      }
+
+      ::-webkit-datetime-edit {
+        display: inline-flex;
+      }
+
+      ::-webkit-datetime-edit-fields-wrapper {
+        padding: 0;
+      }
+
+      ::-webkit-datetime-edit,
+      ::-webkit-datetime-edit-year-field,
+      ::-webkit-datetime-edit-month-field,
+      ::-webkit-datetime-edit-day-field,
+      ::-webkit-datetime-edit-hour-field,
+      ::-webkit-datetime-edit-minute-field,
+      ::-webkit-datetime-edit-second-field,
+      ::-webkit-datetime-edit-millisecond-field,
+      ::-webkit-datetime-edit-meridiem-field {
+        padding-block: 0;
+      }
+
+      ::-webkit-calendar-picker-indicator {
+        line-height: 1;
+      }
+
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+
+      button,
+      input:where([type="button"], [type="reset"], [type="submit"]),
+      ::file-selector-button {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+      }
+
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+
+      [hidden]:where(:not([hidden="until-found"])) {
+        display: none !important;
+      }
+    }
+
+    @layer utilities {
+      .absolute {
+        position: absolute;
+      }
+
+      .fixed {
+        position: fixed;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .sticky {
+        position: sticky;
+      }
+
+      .inset-0 {
+        inset: calc(var(--spacing) * 0);
+      }
+
+      .top-0 {
+        top: calc(var(--spacing) * 0);
+      }
+
+      .top-1\/2 {
+        top: calc(1/2 * 100%);
+      }
+
+      .top-18 {
+        top: calc(var(--spacing) * 18);
+      }
+
+      .right-2 {
+        right: calc(var(--spacing) * 2);
+      }
+
+      .left-2 {
+        left: calc(var(--spacing) * 2);
+      }
+
+      .z-51 {
+        z-index: 51;
+      }
+
+      .z-100 {
+        z-index: 100;
+      }
+
+      .m-auto {
+        margin: auto;
+      }
+
+      .mx-auto {
+        margin-inline: auto;
+      }
+
+      .my-3 {
+        margin-block: calc(var(--spacing) * 3);
+      }
+
+      .mt-1 {
+        margin-top: calc(var(--spacing) * 1);
+      }
+
+      .mt-2 {
+        margin-top: calc(var(--spacing) * 2);
+      }
+
+      .mt-3 {
+        margin-top: calc(var(--spacing) * 3);
+      }
+
+      .mt-4 {
+        margin-top: calc(var(--spacing) * 4);
+      }
+
+      .mt-6 {
+        margin-top: calc(var(--spacing) * 6);
+      }
+
+      .mt-8 {
+        margin-top: calc(var(--spacing) * 8);
+      }
+
+      .mt-10 {
+        margin-top: calc(var(--spacing) * 10);
+      }
+
+      .mt-auto {
+        margin-top: auto;
+      }
+
+      .mb-5 {
+        margin-bottom: calc(var(--spacing) * 5);
+      }
+
+      .mb-8 {
+        margin-bottom: calc(var(--spacing) * 8);
+      }
+
+      .ml-3 {
+        margin-left: calc(var(--spacing) * 3);
+      }
+
+      .contents {
+        display: contents;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .grid {
+        display: grid;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .h-2 {
+        height: calc(var(--spacing) * 2);
+      }
+
+      .h-150 {
+        height: calc(var(--spacing) * 150);
+      }
+
+      .min-h-screen {
+        min-height: 100vh;
+      }
+
+      .w-2 {
+        width: calc(var(--spacing) * 2);
+      }
+
+      .w-auto {
+        width: auto;
+      }
+
+      .w-full {
+        width: 100%;
+      }
+
+      .max-w-2xl {
+        max-width: var(--container-2xl);
+      }
+
+      .max-w-md {
+        max-width: var(--container-md);
+      }
+
+      .max-w-xl {
+        max-width: var(--container-xl);
+      }
+
+      .flex-1 {
+        flex: 1;
+      }
+
+      .flex-none {
+        flex: none;
+      }
+
+      .-translate-y-1\/2 {
+        --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+
+      .scale-110 {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+
+      .list-inside {
+        list-style-position: inside;
+      }
+
+      .list-disc {
+        list-style-type: disc;
+      }
+
+      .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+
+      .flex-col {
+        flex-direction: column;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .justify-between {
+        justify-content: space-between;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .gap-2 {
+        gap: calc(var(--spacing) * 2);
+      }
+
+      .gap-3 {
+        gap: calc(var(--spacing) * 3);
+      }
+
+      .gap-4 {
+        gap: calc(var(--spacing) * 4);
+      }
+
+      .gap-6 {
+        gap: calc(var(--spacing) * 6);
+      }
+
+      .gap-8 {
+        gap: calc(var(--spacing) * 8);
+      }
+
+      .gap-10 {
+        gap: calc(var(--spacing) * 10);
+      }
+
+      .space-y-2 {
+        :where(& > :not(:last-child)) {
+          --tw-space-y-reverse: 0;
+          margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+          margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+        }
+      }
+
+      .space-y-4 {
+        :where(& > :not(:last-child)) {
+          --tw-space-y-reverse: 0;
+          margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+          margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+        }
+      }
+
+      .space-x-5 {
+        :where(& > :not(:last-child)) {
+          --tw-space-x-reverse: 0;
+          margin-inline-start: calc(calc(var(--spacing) * 5) * var(--tw-space-x-reverse));
+          margin-inline-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-x-reverse)));
+        }
+      }
+
+      .overflow-hidden {
+        overflow: hidden;
+      }
+
+      .overflow-x-auto {
+        overflow-x: auto;
+      }
+
+      .overflow-y-hidden {
+        overflow-y: hidden;
+      }
+
+      .rounded {
+        border-radius: 0.25rem;
+      }
+
+      .rounded-full {
+        border-radius: calc(infinity * 1px);
+      }
+
+      .rounded-lg {
+        border-radius: var(--radius-lg);
+      }
+
+      .rounded-xl {
+        border-radius: var(--radius-xl);
+      }
+
+      .border {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+      }
+
+      .border-t {
+        border-top-style: var(--tw-border-style);
+        border-top-width: 1px;
+      }
+
+      .border-b {
+        border-bottom-style: var(--tw-border-style);
+        border-bottom-width: 1px;
+      }
+
+      .border-b-2 {
+        border-bottom-style: var(--tw-border-style);
+        border-bottom-width: 2px;
+      }
+
+      .border-\[var\(--app-accent-color\)\] {
+        border-color: var(--app-accent-color);
+      }
+
+      .border-white\/10 {
+        border-color: color-mix(in srgb, #fff 10%, transparent);
+
+        @supports (color: color-mix(in lab, red, red)) {
+          border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+        }
+      }
+
+      .bg-\[var\(--app-accent-color\)\] {
+        background-color: var(--app-accent-color);
+      }
+
+      .bg-\[var\(--bg-color\)\] {
+        background-color: var(--bg-color);
+      }
+
+      .bg-black\/40 {
+        background-color: color-mix(in srgb, #000 40%, transparent);
+
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
+        }
+      }
+
+      .bg-gray-400\/50 {
+        background-color: color-mix(in srgb, oklch(70.7% 0.022 261.325) 50%, transparent);
+
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-gray-400) 50%, transparent);
+        }
+      }
+
+      .bg-white\/5 {
+        background-color: color-mix(in srgb, #fff 5%, transparent);
+
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+        }
+      }
+
+      .p-2 {
+        padding: calc(var(--spacing) * 2);
+      }
+
+      .p-5 {
+        padding: calc(var(--spacing) * 5);
+      }
+
+      .px-2 {
+        padding-inline: calc(var(--spacing) * 2);
+      }
+
+      .px-3 {
+        padding-inline: calc(var(--spacing) * 3);
+      }
+
+      .px-4 {
+        padding-inline: calc(var(--spacing) * 4);
+      }
+
+      .px-6 {
+        padding-inline: calc(var(--spacing) * 6);
+      }
+
+      .px-10 {
+        padding-inline: calc(var(--spacing) * 10);
+      }
+
+      .py-1 {
+        padding-block: calc(var(--spacing) * 1);
+      }
+
+      .py-2 {
+        padding-block: calc(var(--spacing) * 2);
+      }
+
+      .py-4 {
+        padding-block: calc(var(--spacing) * 4);
+      }
+
+      .py-5 {
+        padding-block: calc(var(--spacing) * 5);
+      }
+
+      .py-10 {
+        padding-block: calc(var(--spacing) * 10);
+      }
+
+      .pt-6 {
+        padding-top: calc(var(--spacing) * 6);
+      }
+
+      .pb-10 {
+        padding-bottom: calc(var(--spacing) * 10);
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-2xl {
+        font-size: var(--text-2xl);
+        line-height: var(--tw-leading, var(--text-2xl--line-height));
+      }
+
+      .text-3xl {
+        font-size: var(--text-3xl);
+        line-height: var(--tw-leading, var(--text-3xl--line-height));
+      }
+
+      .text-lg {
+        font-size: var(--text-lg);
+        line-height: var(--tw-leading, var(--text-lg--line-height));
+      }
+
+      .text-sm {
+        font-size: var(--text-sm);
+        line-height: var(--tw-leading, var(--text-sm--line-height));
+      }
+
+      .text-xl {
+        font-size: var(--text-xl);
+        line-height: var(--tw-leading, var(--text-xl--line-height));
+      }
+
+      .text-xs {
+        font-size: var(--text-xs);
+        line-height: var(--tw-leading, var(--text-xs--line-height));
+      }
+
+      .leading-tight {
+        --tw-leading: var(--leading-tight);
+        line-height: var(--leading-tight);
+      }
+
+      .font-bold {
+        --tw-font-weight: var(--font-weight-bold);
+        font-weight: var(--font-weight-bold);
+      }
+
+      .font-medium {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
+      }
+
+      .font-semibold {
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
+      }
+
+      .tracking-wide {
+        --tw-tracking: var(--tracking-wide);
+        letter-spacing: var(--tracking-wide);
+      }
+
+      .whitespace-nowrap {
+        white-space: nowrap;
+      }
+
+      .text-\[var\(--app-accent-color\)\] {
+        color: var(--app-accent-color);
+      }
+
+      .text-\[var\(--text-color\)\] {
+        color: var(--text-color);
+      }
+
+      .text-white {
+        color: var(--color-white);
+      }
+
+      .underline {
+        text-decoration-line: underline;
+      }
+
+      .opacity-70 {
+        opacity: 70%;
+      }
+
+      .opacity-80 {
+        opacity: 80%;
+      }
+
+      .opacity-85 {
+        opacity: 85%;
+      }
+
+      .opacity-90 {
+        opacity: 90%;
+      }
+
+      .shadow-lg {
+        --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+
+      .transition-all {
+        transition-property: all;
+        transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+        transition-duration: var(--tw-duration, var(--default-transition-duration));
+      }
+
+      .transition-colors {
+        transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+        transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+        transition-duration: var(--tw-duration, var(--default-transition-duration));
+      }
+
+      .duration-500 {
+        --tw-duration: 500ms;
+        transition-duration: 500ms;
+      }
+
+      .\[scrollbar-color\:var\(--app-accent-color\)_transparent\] {
+        scrollbar-color: var(--app-accent-color) transparent;
+      }
+
+      .\[scrollbar-width\:thin\] {
+        scrollbar-width: thin;
+      }
+
+      .hover\:bg-black\/5 {
+        &:hover {
+          @media (hover: hover) {
+            background-color: color-mix(in srgb, #000 5%, transparent);
+
+            @supports (color: color-mix(in lab, red, red)) {
+              background-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+            }
+          }
+        }
+      }
+
+      .hover\:text-\[var\(--app-accent-color\)\] {
+        &:hover {
+          @media (hover: hover) {
+            color: var(--app-accent-color);
+          }
+        }
+      }
+
+      .sm\:grid-cols-3 {
+        @media (width >=40rem) {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .sm\:gap-6 {
+        @media (width >=40rem) {
+          gap: calc(var(--spacing) * 6);
+        }
+      }
+
+      .sm\:overflow-visible {
+        @media (width >=40rem) {
+          overflow: visible;
+        }
+      }
+
+      .sm\:px-0 {
+        @media (width >=40rem) {
+          padding-inline: calc(var(--spacing) * 0);
+        }
+      }
+
+      .sm\:text-sm {
+        @media (width >=40rem) {
+          font-size: var(--text-sm);
+          line-height: var(--tw-leading, var(--text-sm--line-height));
+        }
+      }
+
+      .md\:col-span-2 {
+        @media (width >=48rem) {
+          grid-column: span 2 / span 2;
+        }
+      }
+
+      .md\:flex {
+        @media (width >=48rem) {
+          display: flex;
+        }
+      }
+
+      .md\:hidden {
+        @media (width >=48rem) {
+          display: none;
+        }
+      }
+
+      .md\:grid-cols-3 {
+        @media (width >=48rem) {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .md\:items-start {
+        @media (width >=48rem) {
+          align-items: flex-start;
+        }
+      }
+
+      .md\:justify-start {
+        @media (width >=48rem) {
+          justify-content: flex-start;
+        }
+      }
+
+      .md\:py-0 {
+        @media (width >=48rem) {
+          padding-block: calc(var(--spacing) * 0);
+        }
+      }
+
+      .md\:text-left {
+        @media (width >=48rem) {
+          text-align: left;
+        }
+      }
+
+      .\[\&\:\:-webkit-scrollbar\]\:h-\[1px\] {
+        &::-webkit-scrollbar {
+          height: 1px;
+        }
+      }
+
+      .\[\&\:\:-webkit-scrollbar-thumb\]\:rounded-full {
+        &::-webkit-scrollbar-thumb {
+          border-radius: calc(infinity * 1px);
+        }
+      }
+
+      .\[\&\:\:-webkit-scrollbar-thumb\]\:bg-\[color\:var\(--app-accent-color\)\] {
+        &::-webkit-scrollbar-thumb {
+          background-color: var(--app-accent-color);
+        }
+      }
+
+      .\[\&\:\:-webkit-scrollbar-thumb\]\:opacity-40 {
+        &::-webkit-scrollbar-thumb {
+          opacity: 40%;
+        }
+      }
+
+      .\[\&\:\:-webkit-scrollbar-thumb\:hover\]\:opacity-70 {
+        &::-webkit-scrollbar-thumb:hover {
+          opacity: 70%;
+        }
+      }
+
+      .\[\&\:\:-webkit-scrollbar-track\]\:bg-transparent {
+        &::-webkit-scrollbar-track {
+          background-color: transparent;
+        }
+      }
+    }
+
+    @layer base {
+
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+
+      code,
+      pre,
+      kbd,
+      samp {
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+    }
+
+    .light {
+      --text-color: #000000;
+      --bg-color: #ffffff;
+      --primary-color: #C81D2A;
+      --secondary-color: #F36A1D;
+    }
+
+    .dark {
+      --text-color: #ffffff;
+      --bg-color: #121212;
+      --primary-color: #C81D2A;
+      --secondary-color: #F36A1D;
+    }
+
+    @property --tw-translate-x {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0;
+    }
+
+    @property --tw-translate-y {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0;
+    }
+
+    @property --tw-translate-z {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0;
+    }
+
+    @property --tw-scale-x {
+      syntax: "*";
+      inherits: false;
+      initial-value: 1;
+    }
+
+    @property --tw-scale-y {
+      syntax: "*";
+      inherits: false;
+      initial-value: 1;
+    }
+
+    @property --tw-scale-z {
+      syntax: "*";
+      inherits: false;
+      initial-value: 1;
+    }
+
+    @property --tw-space-y-reverse {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0;
+    }
+
+    @property --tw-space-x-reverse {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0;
+    }
+
+    @property --tw-border-style {
+      syntax: "*";
+      inherits: false;
+      initial-value: solid;
+    }
+
+    @property --tw-leading {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @property --tw-font-weight {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @property --tw-tracking {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @property --tw-shadow {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0 0 #0000;
+    }
+
+    @property --tw-shadow-color {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @property --tw-shadow-alpha {
+      syntax: "<percentage>";
+      inherits: false;
+      initial-value: 100%;
+    }
+
+    @property --tw-inset-shadow {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0 0 #0000;
+    }
+
+    @property --tw-inset-shadow-color {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @property --tw-inset-shadow-alpha {
+      syntax: "<percentage>";
+      inherits: false;
+      initial-value: 100%;
+    }
+
+    @property --tw-ring-color {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @property --tw-ring-shadow {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0 0 #0000;
+    }
+
+    @property --tw-inset-ring-color {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @property --tw-inset-ring-shadow {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0 0 #0000;
+    }
+
+    @property --tw-ring-inset {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @property --tw-ring-offset-width {
+      syntax: "<length>";
+      inherits: false;
+      initial-value: 0px;
+    }
+
+    @property --tw-ring-offset-color {
+      syntax: "*";
+      inherits: false;
+      initial-value: #fff;
+    }
+
+    @property --tw-ring-offset-shadow {
+      syntax: "*";
+      inherits: false;
+      initial-value: 0 0 #0000;
+    }
+
+    @property --tw-duration {
+      syntax: "*";
+      inherits: false;
+    }
+
+    @layer properties {
+      @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+
+        *,
+        ::before,
+        ::after,
+        ::backdrop {
+          --tw-translate-x: 0;
+          --tw-translate-y: 0;
+          --tw-translate-z: 0;
+          --tw-scale-x: 1;
+          --tw-scale-y: 1;
+          --tw-scale-z: 1;
+          --tw-space-y-reverse: 0;
+          --tw-space-x-reverse: 0;
+          --tw-border-style: solid;
+          --tw-leading: initial;
+          --tw-font-weight: initial;
+          --tw-tracking: initial;
+          --tw-shadow: 0 0 #0000;
+          --tw-shadow-color: initial;
+          --tw-shadow-alpha: 100%;
+          --tw-inset-shadow: 0 0 #0000;
+          --tw-inset-shadow-color: initial;
+          --tw-inset-shadow-alpha: 100%;
+          --tw-ring-color: initial;
+          --tw-ring-shadow: 0 0 #0000;
+          --tw-inset-ring-color: initial;
+          --tw-inset-ring-shadow: 0 0 #0000;
+          --tw-ring-inset: initial;
+          --tw-ring-offset-width: 0px;
+          --tw-ring-offset-color: #fff;
+          --tw-ring-offset-shadow: 0 0 #0000;
+          --tw-duration: initial;
+        }
+      }
+    }
+  </style>
+  <style type="text/css" data-vite-dev-id="E:/Live/bramhaslab/src/App.css">
+    /* App-level styles (can be empty for now) */
+
+    :root {
+      --app-accent-color: #C81D2A;
+    }
+
+    /* Rupee Diary theme */
+    :root[data-app="rupee-diary"] {
+      --app-accent-color: #10B981;
+      /* emerald green */
+    }
+
+    .underline {
+      text-underline-offset: 0.2em;
+    }
+
+    .brand-gradient {
+      background: linear-gradient(270deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    header a:hover,
+    footer a:hover,
+    #apps a:hover,
+    #contact a:hover,
+    #home a:hover,
+    #privacy a:hover,
+    #support a:hover {
+      color: var(--secondary-color);
+    }
+
+    .theme-btn:hover {
+      color: var(--secondary-color);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<!-- CHANGE: remove id="root" so React can't mount and wipe the page -->
+
+<body class="dark" style="background-color: var(--bg-color)">
+  <!-- REMOVE this (it boots the React app and overwrites the page) -->
+  <!-- <script type="module" src="/src/main.jsx"></script> -->
+
+  <div class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-100 bg-[var(--bg-color)] text-[var(--text-color)] shadow-lg">
+      <nav class="w-full flex items-center justify-between px-4 py-2">
+        <div class="text-2xl flex items-center justify-between"><a href="/"
+            class="flex items-center gap-2 font-semibold flex-none"><img width="60" height="50" alt="Bramha's Lab Logo"
+              src="../../../images/logo.png"><span class="brand-gradient">Bramha's Lab</span></a></div>
+        <div class="hidden md:flex flex-1 justify-center items-center gap-6"><a href="/apps"
+            class="flex items-center gap-2 text-sm"><i class="fa-solid fa-table-cells"></i> Apps</a><a href="/support"
+            class="flex items-center gap-2 text-sm"><i class="fa-solid fa-circle-question"></i> Support</a><a
+            href="/privacy" class="flex items-center gap-2 text-sm"><i class="fa-solid fa-shield-halved"></i>
+            Privacy</a><a href="/contact" class="flex items-center gap-2 text-sm"><i class="fa-solid fa-envelope"></i>
+            Contact</a></div>
+        <div class="hidden md:flex flex-none theme-btn"><button class="p-2 rounded hover:bg-black/5"
+            aria-label="Switch to light" type="button"><i class="fa-solid fa-sun"></i></button></div><button
+          type="button" class="md:hidden p-2 rounded hover:bg-black/5" aria-label="Toggle menu"><i
+            class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+    <main class="flex-1">
+      <section id="app-rupee-diary-privacy" class="px-10 pb-10 bg-[var(--bg-color)] text-[var(--text-color)]">
+        <nav id="app-rupee-diary-navbar"
+          class="sticky top-18 mb-5 w-full border-b border-white/10 bg-[var(--bg-color)] py-2 z-51">
+          <ul class="
+                      flex items-center gap-2 sm:gap-6
+                      overflow-x-auto sm:overflow-visible
+                      overflow-y-hidden
+                      whitespace-nowrap
+                      px-2 sm:px-0 py-2 md:py-0
+
+                      /* Firefox */
+                      [scrollbar-width:thin]
+                      [scrollbar-color:var(--app-accent-color)_transparent]
+
+                      /* Chromium / Edge / Safari */
+                      [&amp;::-webkit-scrollbar]:h-[1px]
+                      [&amp;::-webkit-scrollbar-track]:bg-transparent
+                      [&amp;::-webkit-scrollbar-thumb]:bg-[color:var(--app-accent-color)]
+                      [&amp;::-webkit-scrollbar-thumb]:rounded-full
+                      [&amp;::-webkit-scrollbar-thumb]:opacity-40
+                      [&amp;::-webkit-scrollbar-thumb:hover]:opacity-70
+                  ">
+            <li><a
+                class="px-3 py-2 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap opacity-80 hover:text-[var(--app-accent-color)]"
+                href="/app/rupee-diary" data-discover="true">Overview</a></li>
+            <li><a aria-current="page"
+                class="px-3 py-2 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap text-[var(--app-accent-color)] border-b-2 border-[var(--app-accent-color)]"
+                href="/app/rupee-diary/privacy-policy" data-discover="true">Privacy Policy</a></li>
+            <li><a
+                class="px-3 py-2 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap opacity-80 hover:text-[var(--app-accent-color)]"
+                href="/app/rupee-diary/support" data-discover="true">Support</a></li>
+            <li><a
+                class="px-3 py-2 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap opacity-80 hover:text-[var(--app-accent-color)]"
+                href="/app/rupee-diary/terms" data-discover="true">Terms of Service</a></li>
+          </ul>
+        </nav>
+        <h1 class="text-2xl font-semibold text-[var(--app-accent-color)]">Rupee Diary - Privacy Policy</h1>
+        <p>Rupee Diary Mobile Application</p>
+        <p>Last updated: 03/01/2026</p>
+        <p class="mt-4">Rupee Diary respects your privacy. This page explains how your financial data is handled within
+          the Rupee Diary mobile application.</p>
+        <h2 class="text-[var(--app-accent-color)] mt-6">Data Collection</h2>
+        <p>Rupee Diary does not collect, store, or transmit personal or financial data to any external servers. All data
+          entered by the user remains stored locally on the user's device.</p>
+        <h2 class="text-[var(--app-accent-color)] mt-6">Internet Usage</h2>
+        <p>The app may use internet connectivity for optional features. No personal or financial data is uploaded or
+          shared with any service.</p>
+        <h2 class="text-[var(--app-accent-color)] mt-6">Local Storage</h2>
+        <p>All financial records, transactions, and settings are stored locally using the device's internal storage and
+          are never accessed remotely.</p>
+        <h2 class="text-[var(--app-accent-color)] mt-6">Data Backup &amp; Restore</h2>
+        <p>Users may optionally export or import their data manually. Backup files remain fully under the user's control
+          and are never transmitted to any server.</p>
+        <h2 class="text-[var(--app-accent-color)] mt-6">Third-Party Services</h2>
+        <p>Rupee Diary does not use advertising, analytics, or tracking services of any kind.</p>
+        <h2 class="text-[var(--app-accent-color)] mt-6">Data Security</h2>
+        <p>Reasonable measures are taken to protect data stored locally on the user's device against unauthorized
+          access.</p>
+        <h2 class="text-[var(--app-accent-color)] mt-6">Children's Privacy</h2>
+        <p>Rupee Diary is not intended for children under the age of 13 and does not knowingly collect data from
+          children.</p>
+        <h2 class="text-[var(--app-accent-color)] mt-6">Policy Updates</h2>
+        <p>This privacy policy may be updated in future versions of the app. Any changes will be reflected on this page.
+        </p>
+      </section>
+    </main>
+    <footer class="mt-auto bg-[var(--bg-color)] text-[var(--text-color)] border-t">
+      <div class="mx-auto px-4 py-5 ">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+          <div class="text-center md:text-left">
+            <div class="flex items-center justify-center gap-3 md:justify-start"><a href="/"><img width="60" height="50"
+                  alt="Bramha's Lab Logo" src="../../../images/logo.png"></a>
+              <div class="leading-tight">
+                <div class="text-lg font-semibold brand-gradient">Bramha's Lab</div>
+                <div class="text-sm">Simple tools. Clean design.</div>
+              </div>
+            </div>
+            <div class="mt-4 ml-3 flex items-center justify-center gap-3 md:justify-start"><a
+                href="https://play.google.com/store/apps/dev?id=8070286036703301695" target="_blank"><img width="200"
+                  alt="Google Play Image" src="../../../images/play-account.png"></a></div>
+          </div>
+          <div class="grid grid-cols-1 gap-8 text-center md:col-span-2 md:grid-cols-3 md:text-left">
+            <div class="flex flex-col items-center md:items-start">
+              <div class="text-sm font-semibold">Apps</div>
+              <ul class="mt-3 space-y-2 text-sm">
+                <li><a href="/app/rupee-diary">Rupee Diary</a></li>
+                <li>More apps coming soon...</li>
+              </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start">
+              <div class="text-sm font-semibold tracking-wide">Legal</div>
+              <ul class="mt-3 space-y-2 text-sm">
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start">
+              <div class="text-sm font-semibold tracking-wide">Support</div>
+              <ul class="mt-3 space-y-2 text-sm">
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/support">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 flex gap-3 border-t pt-6 items-center justify-center ">
+          <p class="text-sm opacity-85">© 2026 <span class="brand-gradient">Bramha's Lab</span>. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
