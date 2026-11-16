@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./utility/Navbar";
 import { ThemeProvider } from "./theme/ThemeProvider.jsx";
 import Footer from "./utility/Footer.jsx";
+import NotFound from "./utility/NotFound.jsx";
 import Home from "./base/Home.jsx";
 import Support from "./base/Support.jsx";
 import Apps from "./base/Apps.jsx";
@@ -37,6 +38,9 @@ function App() {
               <Route path="/app/rupee-diary/privacy-policy" element={<RupeeDiaryPrivacy />} />
               <Route path="/app/rupee-diary/support" element={<RupeeDiarySupport />} />
               <Route path="/app/rupee-diary/terms" element={<RupeeDiaryTerms />} />
+
+              {/* Catch-all for 404 */}
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
